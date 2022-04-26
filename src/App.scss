@@ -1,0 +1,36 @@
+.App {
+  background-image: url("./static/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .header {
+    margin-top: 150px;
+    font-size: 50px;
+    text-shadow: 0 0 7px rgb(160, 148, 148), 0 0 10px #fff, 0 0 21px #fff,
+      0 0 42px #bc13fe, 0 0 82px #bc13fe, 0 0 92px #bc13fe, 0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 34%;
+      width: 600px;
+      height: 2px;
+      background-color: white;
+      box-shadow: 0 0 10px 0 rgb(160, 148, 148),
+        0 0 6px 0 rgba(235, 146, 236, 0.8), 0 0 10px 0 rgba(226, 121, 209, 0.6);
+    }
+  }
+
+  .content {
+    margin-top: 20px;
+    color: wheat;
+  }
+}
